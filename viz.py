@@ -10,7 +10,8 @@ from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import geopandas as gpd
 
-
+import warnings
+warnings.filterwarnings("ignore")
 import pandas as pd
 
 # Load data from Excel
@@ -239,4 +240,4 @@ def update_choropleth_map(selected_state, selected_metric,selected_year):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=9000)
+    app.run_server(debug=True)
