@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE $PORT
 
-CMD ["python","display_dash.py"]
+CMD ["python","viz.py"]
